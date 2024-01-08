@@ -47,7 +47,7 @@
  
  /* LAYOUT */
  .container {
-     width: 1140px;
+     width: 1160px;
      margin: 0 auto;
      padding: 0 20px;
  }
@@ -127,3 +127,31 @@
  /************************************************
      SOLUZIONE RESPONSIVE
   ************************************************/
+  @media screen and (max-width: 1140px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row .col {
+        width: 90vw;
+        margin-bottom: 5vh;
+    }
+}
